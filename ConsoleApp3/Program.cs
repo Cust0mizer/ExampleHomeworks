@@ -8,13 +8,17 @@ namespace ConsoleApp3
         {
             string a2 = Console.ReadLine();
             int aa2 = int.Parse(a2);
-            if (aa2<18)
+            if (aa2 < 18)
             {
                 Console.WriteLine("ты не годен, иди молоко пей");
             }
             else
             {
                 Console.WriteLine("родина ждет");
+            }
+            else if (true)
+            {
+                Console.WriteLine("я в любом случае мальчик1");
             }
         }
     }
