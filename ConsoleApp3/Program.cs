@@ -1,27 +1,18 @@
 ﻿using System;
 
-namespace ConsoleApp3
-{
-    class Program
-    {
-
-
-
-        static double Print(double a, double b)
-        {
-            return a + b;
+namespace ExampleHomework {
+    public class Program {
+        public static void Main(string[] args) {
+            GetSum(35, 12);
+            Print(GetSum(35, 12).ToString());
         }
 
-        static void Main(string[] args)
-        {
-            Print(3.5, 1.2);
+        private static void Print(string content) {
+            Console.WriteLine(content);
         }
 
-        static void Main2()
-        {
-            string valuea = Console.ReadLine();
-            int valueaa = int.Parse(valuea);
-            valueaa = +1;
-        } 
+        private static int GetSum(int firstValue, int secondValue) {
+            return firstValue + secondValue;
+        }
     }
 }
